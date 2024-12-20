@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <title>Tu historia👆🤓</title>
+</head>
+<body>
+    <div class="table-container">
+        <img src="../images/mesa.png" alt="mesa" class="table-image">
+    </div>
+    <div class="javi-container">
+        <img src="../images/javi_inicio_profe.png" alt="javi" class="javi-image">
+    </div>
+    <div class="javi-sentado-container">
+        <img src="../images/javi_sentado.png" alt="javi sentado" class="javi-sentado" style="display: none;">
+        <img src="../images/javi_sentado_charla1.png" alt="javi sentado charla" class="javi-sentado-charla1" style="display: none;">
+        <img src="../images/javi_sentado_charla2.png" alt="javi sentado charla 2" class="javi-sentado-charla2" style="display: none;">
+        <img src="../images/javi_sentado_charla3.png" alt="javi sentado charla 3" class="javi-sentado-charla3" style="display: none;">
+        <img src="../images/javi_sentado_charla4.png" alt="javi sentado charla 4" class="javi-sentado-charla4" style="display: none;">
+    </div>
+    <div class="nuve-container">
+        <img src="../images/nuve.png" alt="nuve" class="nuve-image" style="display: none;">
+    </div>
+    <div class="barrendero-container">
+        <img src="../images/barrendero.png" alt="barrendero" class="barrendero-image" style="display: none;">
+    </div>
+    <div class="cafe2-container" style="display: none;">
+        <img src="../images/cafe2.png" alt="cafe2" class="cafe2-image">
+    </div>
+    <div class="cafe-container">
+        <img src="../images/cafe.png" alt="cafe" class="cafe-image" id="cafe-image">
+    </div>
+    <div class="chair-container">
+        <img src="../images/butaca.png" alt="butaca" class="chair-image">
+    </div>
+    <div class="half-screen left-half">
+        <img src="../images/telon.png" alt="telon left" class="half-screen-image">
+    </div>
+    <div class="half-screen right-half">
+        <img src="../images/telon.png" alt="telon right" class="half-screen-image">
+    </div>
+    <div class="centered-text">
+        <img src="../images/logo.png" alt="logo" class="logo">
+        <p>🎭En este juego, tomarás decisiones que afectarán el curso de la historia👆🤓. ¿Estas listo para esta aventura o te cagas💩?🎭</p>
+        <button onclick="startGame()">Iniciar Juego</button>
+    </div>
+    <div class="lampara">
+        <div class="cable"></div>
+        <div class="caja"></div>
+        <div class="luz l0"></div>
+    </div>
+    <div class="volador-container" style="display: none;">
+        <img src="../images/volador.png" alt="volador" class="volador-image">
+    </div>
+    <div class="bocadillo-redondo" style="display: none;">
+        <p>Pues esta historia pasa en...</p>
+        <input type="text" readonly>
+        <button class="confirm-button">Confirmar</button>
+    </div>
+    <div class="choices-container" style="display: none;">
+        <!-- <button class="choice">Hotel</button> -->
+        <button class="choice">Far West</button>
+       <!-- <button class="choice">?</button> -->
+        <button class="clear-button" onclick="clearInput()">Limpiar</button>
+    </div>
+    <audio id="background-music" src="../images/musicafondo_inicio.mp3" autoplay loop volume="0.2"></audio>
+    <footer class="footer-guapo">
+        ¡Creado by Victor Hidalgo🤓!
+    </footer>
+</body>
+<script src="../js/script.js"></script>
+</html>

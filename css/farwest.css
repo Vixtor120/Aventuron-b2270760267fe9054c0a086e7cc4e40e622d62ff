@@ -1,0 +1,169 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: all 5s ease;
+}
+
+.background-image.left {
+    left: -50%;
+}
+
+.background-image.right {
+    right: -50%;
+}
+
+.javi-walking {
+    position: absolute;
+    bottom: 4%;
+    left: 10%;
+    width: 200px;
+    height: auto;
+    transition: left 5s ease, opacity 1s ease;
+    opacity: 0;
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.planta-rodante {
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 100px;
+    height: auto;
+    transition: left 10s linear, opacity 1s ease;
+    animation: roll 2s infinite linear;
+    opacity: 0;
+}
+
+.alejandro-walking {
+    position: absolute;
+    bottom: -6%;
+    right: -25%;
+    width: 300px;
+    height: auto;
+    transition: right 5s ease, opacity 1s ease;
+    opacity: 0;
+}
+
+.caballo {
+    position: absolute;
+    bottom: 0%;
+    right: -10%;
+    width: 300px;
+    height: auto;
+    transition: right 5s ease, opacity 1s ease;
+    opacity: 0;
+}
+
+.caballo-gritando {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    width: 650px;
+    height: auto;   
+    opacity: 0;
+}
+
+.alejandro-policiacharlando {
+    position: absolute;
+    bottom: 0%;
+    right: 21%;
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    transition: right 5s ease, opacity 1s ease;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.drag-option {
+    position: absolute;
+    bottom: 10%;
+    width: 100px;
+    padding: 10px;
+    background: #8B4513; /* SaddleBrown */
+    border: 2px solid #A0522D; /* Sienna */
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: grab;
+    opacity: 0;
+    transition: opacity 1s ease, background 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.drag-option:hover {
+    background: #A0522D; /* Sienna */
+    transform: scale(1.1);
+}
+
+@keyframes moveDown {
+    0% {
+        bottom: 10%;
+    }
+    100% {
+        bottom: 5%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes moveDownAndHide {
+    0% {
+        bottom: 10%;
+        opacity: 1;
+    }
+    100% {
+        bottom: -10%;
+        opacity: 0;
+    }
+}
+
+#option1 {
+    left: 20%;
+}
+
+#option2 {
+    right: 20%;
+}
+
+.javi-vaquerorosa,
+.javi-vaqueromarron {
+    position: absolute;
+    bottom: 4%;
+    left: 45%;
+    width: 120px;
+    height: auto;
+    transition: left 5s ease, opacity 1s ease;
+    opacity: 0;
+}
+
